@@ -409,14 +409,20 @@
 /*  SERVICES  */
     .services{
         display: flex;
+        flex-wrap: wrap;
     }
 
     .services__item{
-        flex: 1 1 0;
+        width: 33.3333%;
 
-        padding-left: 85px;
-        padding-right: 25px;
+        padding: 0 35px 40px 85px;
         position: relative;
+        margin-bottom: 40px;
+
+    }
+
+    .services__item--border{
+        border-bottom: 1px solid #e5e5e5;
     }
 
     .services__img{
@@ -450,6 +456,8 @@
 
     .devices__item{
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .devices__item--iPhone{
@@ -463,10 +471,19 @@
 
     .wedo{
         display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
     }
 
     .wedo__item{
-        flex: 1 1 0;
+        width: 50%;
+        padding: 0 15px;
+    }
+
+    .wedo__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
 /* ACCORDION */
@@ -1131,7 +1148,7 @@
             font-size: 80px;
         }
 
-        /* Stat */
+    /* Stat */
 
         .stat{
             justify-content: center;
@@ -1148,6 +1165,17 @@
 
         .stat__item:last-child{
             border-right: 0;
+        }
+
+    /* Services */
+
+        .services__item{
+            width: 50%;
+            padding-bottom: 0;
+        }
+
+        .services__item--border{
+            border-bottom:  none;
         }
 }
 @media (max-width: 770px){
@@ -1177,6 +1205,10 @@
             justify-content: center;
         }
 
+        .section--devices{
+            padding-bottom: 0;
+        }
+
     /* Card */
 
         .card{
@@ -1187,6 +1219,33 @@
 
         .card:last-child{
             margin-bottom: 0;
+        }
+
+    /* Services */
+    
+        .services{
+            justify-content: center;
+        }
+
+        .services__item{
+            width: 100%;
+            max-width: 400px;
+            padding-left: 55px;
+            padding-right: 0;
+        }
+
+        .services__img{
+            left: 0;
+        }
+
+    /* Wedo */
+        
+        .wedo__img{
+            display: none;
+        }
+
+        .wedo__item{
+            width: 100%;
         }
 }
 @media (max-width: 575px){
@@ -1231,5 +1290,17 @@
 
         .stat__item__num{
             font-size: 52px;
+        }
+
+    /* Devices */
+
+        .devices{
+            max-width: 320px;
+        }
+
+        .devices__item--iPhone{
+            width: 180px;
+            bottom: -50px;
+            right: -80px;
         }
 }
