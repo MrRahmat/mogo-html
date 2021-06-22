@@ -15,16 +15,16 @@
 
 <div>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">MoGo</div>
-                <nav class="nav">
-                    <a href="#" class="nav__link active">About</a>
-                    <a href="#" class="nav__link">Service</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Work</a>
-                    <a href="#" class="nav__link">Contact</a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link" data-scroll="#about">About</a>
+                    <a href="#" class="nav__link" data-scroll="#service">Service</a>
+                    <a href="#" class="nav__link" data-scroll="#blog">Blog</a>
+                    <a href="#" class="nav__link" data-scroll="#work">Work</a>
+                    <a href="#" class="nav__link" data-scroll="#contact">Contact</a>
                     <a href="#" class="nav__link">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -40,7 +40,8 @@
         </div>
     </header>
     <div class="page">
-        <div class="intro">
+        <!-- Intro -->
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <h2 class="intro__suptitle">Creative Template</h2>
@@ -74,7 +75,8 @@
             </div>
         </div>
 
-        <section class="section">
+        <!-- About -->
+        <section class="section" id="about">
             <div class="container">
                 <div class="section__header">
                     <h3 class='section__suptitle'>What we do</h3>
@@ -119,6 +121,7 @@
             </div>
         </section>
 
+        <!-- Stat -->
         <div class='data'>
             <div class="stat">
                 <div class="stat__item">
@@ -209,7 +212,8 @@
             </div>
         </section>
 
-        <section class="section">
+        <!-- Wedo -->
+        <section class="section" id="service">
             <div class="container">
                 <div class="section__header">
                     <h3 class='section__suptitle'>Service</h3>
@@ -277,6 +281,7 @@
             </div>
         </section>
 
+        <!-- Reviews 1 -->
         <div class="section section--gray">
             <div class="container">
                 <div class="reviews">
@@ -300,6 +305,7 @@
             </div>
         </div>
 
+        <!-- Team -->
         <section class="section">
             <div class="container">
                 <div class="section__header">
@@ -401,6 +407,7 @@
             </div>
         </section>
 
+        <!-- Logos -->
         <div class="section section--gray">
             <div class="container">
                 <div class="logos">
@@ -426,7 +433,8 @@
             </div>
         </div>
 
-        <section class="section">
+        <!-- Work -->
+        <section class="section" id="work">
             <div class="container">
                 <div class="section__header">
                     <h3 class='section__suptitle'>Who we do</h3>
@@ -510,6 +518,7 @@
             </div>
         </section>
 
+        <!-- Reviews 2 -->
         <div class="section">
             <div class="container">
                 <div class="reviews">
@@ -533,6 +542,7 @@
             </div>
         </div>
 
+        <!-- Clients -->
         <section class="section section--clients">
             <div class="container">
                 <div class="section__header">
@@ -587,7 +597,8 @@
             </div>
         </section>
 
-        <section class="section">
+        <!-- Blog -->
+        <section class="section" id="blog">
             <div class="container">
                 <div class="section__header">
                     <h3 class='sect ion__suptitle'>Our stories</h3>
@@ -687,6 +698,7 @@
             </div>
         </section>
 
+        <!-- Map -->
         <section class="section section--map">
             <div class="container">
                 <div class="map">
@@ -698,10 +710,11 @@
             </div>
         </section>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <div class="footer__col footer__col--form">
+                    <div class="footer__col footer__col--form" id="contact">
                         <div class="footer__logo">MoGo</div>
                         <div class="footer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
                             recusandae
@@ -812,7 +825,9 @@
                 </div>
             </div> <!-- /.container -->
         </footer>
-    </div>
+    </div> <!-- /.page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/app.js"></script>
     </body>
 
 </html>
