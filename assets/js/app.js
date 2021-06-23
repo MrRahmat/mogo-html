@@ -38,4 +38,29 @@ $(function() {
         }, 700);
     });
 
+    //Реализация меню
+    $("#nav-toggle").on("click", function (event) {
+        event.preventDefault();
+        $(this).toggleClass("active");
+        $("#nav").toggleClass("active");
+    });
+
+    //Аккордион
+    $("[data-collapse").on("click", function (event) {
+        event.preventDefault();
+        
+        var blockId = $(this).data('collapse');
+
+        $(blockId).slideToggle();
+        $(this).toggleClass("active");
+    });
+
+    // Слайдер
+    $("[data-slider").slick({
+        infinity: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
 });
